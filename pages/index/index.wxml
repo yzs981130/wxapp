@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+<!--
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+-->
+  <view class="intro">
+    <text class="intro-info">Hi, {{userInfo.nickName}}\n\n\n</text>
+
+    <text class="intro-info">正态分布的密度函数</text>
+    <image class="normalsvg" src="https://yezhisheng.com.cn/normal.svg"></image>
+  </view>
+  <!--
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  -->
+  <form class="calculator">
+    
+    <input class="sigma" id="sigma" placeholder="sigma" bindinput="setSigma" type="digit"></input>
+    <input class="mu" id="mu" placeholder="mu" bindinput="setMu" type="digit"></input>
+    <input class="x" id="x" placeholder="x" bindinput="setX" type="digit"></input>
+    <text class="calc">\n</text>
+    <view class="button_">
+      <button bindtap="cal">计算</button><button form-type="reset">重置</button>
+    </view>
+  </form>
+  <view id="ans" class="ans">
+    <text id="result" style="display:{{btn_display}}">\nf(x) = {{ans}}\n</text>
+    <text id="phi" style="display:{{btn_display}}">Phi(x) = {{phi}}</text>
+  </view>
+</view>

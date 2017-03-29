@@ -1,0 +1,58 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 00px;
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro{
+  margin-top: 20rpx;
+}
+.normalsvg{
+  width: 400rpx;
+  margin: 20rpx;
+}
+.calculator{
+  margin:0rpx;
+}
+.calc{
+  align-content: center;
+}
+input{
+  align-content: center;
+  margin: 20rpx;
+  height: 50rpx;
+  width: 400rpx;
+}
+button{
+  margin:10rpx;
+  width: 200rpx;
+  display: inline-block;
+  text-align: center;
+}
+.button_{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
